@@ -1,0 +1,678 @@
+/* =================================
+   STUDENTS PAGE
+================================= */
+
+.students-page {
+
+    min-height: 100vh;
+
+    padding: 28px;
+
+    box-sizing: border-box;
+
+    background: #f5f7fc;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+/* =================================
+   PAGE HEADER
+================================= */
+
+.students-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 24px;
+
+}
+
+
+.students-label {
+
+    margin: 0 0 6px;
+
+    color: #586eea;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+}
+
+
+.students-header h1 {
+
+    margin: 0;
+
+    color: #17213b;
+
+    font-size: 32px;
+
+}
+
+
+.students-description {
+
+    margin: 8px 0 0;
+
+    color: #71809a;
+
+    font-size: 15px;
+
+}
+
+
+/* =================================
+   ADD STUDENT BUTTON
+================================= */
+
+.add-student-btn {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 12px 18px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #586eea;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+
+.add-student-btn:hover {
+
+    opacity: 0.9;
+
+}
+
+
+.add-student-btn span {
+
+    font-size: 20px;
+
+}
+
+
+/* =================================
+   TABLE CONTAINER
+================================= */
+
+.students-container {
+
+    width: 100%;
+
+    overflow-x: auto;
+
+    border-radius: 18px;
+
+    background: white;
+
+    box-shadow: 0 10px 25px rgba(
+        30,
+        50,
+        90,
+        0.08
+    );
+
+}
+
+
+/* =================================
+   TABLE
+================================= */
+
+.student-table {
+
+    min-width: 1050px;
+
+}
+
+
+/* =================================
+   SAME COLUMNS FOR HEADER + ROWS
+================================= */
+
+.table-header,
+.table-row {
+
+    display: grid;
+
+    grid-template-columns:
+
+        2.8fr
+
+        2.5fr
+
+        1.4fr
+
+        1.2fr
+
+        1.7fr;
+
+    align-items: center;
+
+    column-gap: 24px;
+
+}
+
+
+/* =================================
+   TABLE HEADER
+================================= */
+
+.table-header {
+
+    min-height: 58px;
+
+    padding: 0 28px;
+
+    box-sizing: border-box;
+
+    border-bottom: 1px solid #edf0f5;
+
+    background: #fafbfe;
+
+    color: #71809a;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+}
+
+
+/* =================================
+   TABLE ROW
+================================= */
+
+.table-row {
+
+    min-height: 76px;
+
+    padding: 0 28px;
+
+    box-sizing: border-box;
+
+    border-bottom: 1px solid #edf0f5;
+
+    color: #17213b;
+
+    font-size: 14px;
+
+}
+
+
+.table-row:last-child {
+
+    border-bottom: none;
+
+}
+
+
+.table-row:hover {
+
+    background: #fafbff;
+
+}
+
+
+/* =================================
+   NAME COLUMN
+================================= */
+
+.name-column {
+
+    width: 100%;
+
+    min-width: 0;
+
+}
+
+
+.student-name-cell {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    width: 100%;
+
+    min-width: 0;
+
+}
+
+
+/* =================================
+   AVATAR
+================================= */
+
+.student-avatar {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex: 0 0 40px;
+
+    width: 40px;
+
+    height: 40px;
+
+    border-radius: 50%;
+
+    background: linear-gradient(
+        135deg,
+        #5865f2,
+        #7c83ff
+    );
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+}
+
+
+/* =================================
+   STUDENT NAME
+================================= */
+
+.student-name {
+
+    display: block;
+
+    flex: 1;
+
+    min-width: 0;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+
+    font-weight: bold;
+
+}
+
+
+/* =================================
+   EMAIL
+================================= */
+
+.email-column {
+
+    min-width: 0;
+
+}
+
+
+.student-email {
+
+    display: block;
+
+    overflow: hidden;
+
+    color: #71809a;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+
+}
+
+
+/* =================================
+   DEPARTMENT
+================================= */
+
+.department-column {
+
+    min-width: 0;
+
+}
+
+
+.department-badge {
+
+    display: inline-block;
+
+    padding: 6px 10px;
+
+    border-radius: 12px;
+
+    background: #edf2ff;
+
+    color: #5067d8;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+}
+
+
+/* =================================
+   CITY
+================================= */
+
+.city-column {
+
+    color: #4f5d75;
+
+}
+
+
+/* =================================
+   ACTIONS
+================================= */
+
+.actions-column {
+
+    min-width: 0;
+
+}
+
+
+.action-buttons {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+}
+
+
+.edit-btn,
+.delete-btn {
+
+    padding: 7px 11px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+/* ==========================
+   EDIT STUDENT POPUP MODAL
+========================== */
+
+.edit-box {
+
+    position: fixed;
+
+    top: 50%;
+
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 350px;
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 16px;
+    border-color:black;
+
+
+
+
+
+}
+
+/* Background overlay */
+
+.edit-box::before {
+
+    content: "";
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100vw;
+
+    height: 100vh;
+
+    background: rgba(0,0,0,0);
+
+    z-index: -1;
+
+}
+
+
+.edit-box h2 {
+
+    text-align: center;
+
+    margin-bottom: 25px;
+
+    color: #1e293b;
+
+    font-size: 24px;
+
+}
+
+
+/* INPUT STYLE */
+
+.edit-box input {
+
+    width: 100%;
+
+    padding: 10px 12px;
+
+    margin-bottom: 12px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+}
+
+
+.edit-box input:focus {
+
+    border-color: #2563eb;
+
+}
+
+
+
+/* BUTTONS */
+
+.edit-box button {
+
+    width: 48%;
+
+    padding: 10px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+}
+
+
+/* SAVE */
+
+.edit-box button:first-of-type {
+
+    background: #2563eb;
+
+    color: white;
+
+}
+
+
+.edit-box button:first-of-type:hover {
+
+    background: #1d4ed8;
+
+}
+
+
+
+/* CANCEL */
+
+.edit-box button:last-of-type {
+
+    background: #ef4444;
+
+    color: white;
+
+}
+
+
+.edit-box button:last-of-type:hover {
+
+    background: #dc2626;
+
+}
+
+
+
+/* POPUP ANIMATION */
+
+@keyframes popup {
+
+    from {
+
+        opacity: 0;
+
+        transform: translate(-50%, -45%);
+
+    }
+
+
+    to {
+
+        opacity: 1;
+
+        transform: translate(-50%, -50%);
+
+    }
+
+}
+
+.edit-btn {
+
+    background: #edf2ff;
+
+    color: #586eea;
+
+}
+
+
+.delete-btn {
+
+    background: #fff0f0;
+
+    color: #e05252;
+
+}
+
+
+.edit-btn:hover,
+.delete-btn:hover {
+
+    opacity: 0.8;
+
+}
+
+
+/* =================================
+   EMPTY MESSAGE
+================================= */
+
+.empty-message {
+
+    padding: 50px;
+
+    text-align: center;
+
+    color: #71809a;
+
+}
+
+
+/* =================================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 900px) {
+
+    .students-header {
+
+        align-items: flex-start;
+
+        gap: 20px;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .students-page {
+
+        padding: 18px;
+
+    }
+
+
+    .students-header {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 18px;
+
+    }
+
+}

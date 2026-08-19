@@ -1,0 +1,61 @@
+.user-layout{
+    display:flex;
+    min-height:100vh;
+    background:#f4f7fb;
+}
+
+.user-sidebar{
+    width:240px;
+    background:#1e3a8a;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    padding:20px;
+}
+
+.user-logo{
+    text-align:center;
+    margin-bottom:35px;
+    font-size:24px;
+    font-weight:700;
+}
+
+.user-menu{
+    color:white;
+    text-decoration:none;
+    padding:14px 18px;
+    border-radius:10px;
+    margin-bottom:12px;
+    transition:.3s;
+    font-weight:600;
+}
+
+.user-menu:hover{
+    background:rgba(255,255,255,.15);
+}
+
+.user-menu.active{
+    background:white;
+    color:#1e3a8a;
+}
+
+.user-logout{
+    margin-top:auto;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    background:#dc2626;
+    color:white;
+    font-size:15px;
+    cursor:pointer;
+}
+
+.user-logout:hover{
+    background:#b91c1c;
+}
+
+.user-content{
+    flex:1;
+    padding:35px;
+    background:#f8fafc;
+}

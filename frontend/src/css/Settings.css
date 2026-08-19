@@ -1,0 +1,211 @@
+.settings-page {
+
+    min-height: 100vh;
+
+    padding: 28px;
+
+    box-sizing: border-box;
+
+    background: #f5f7fc;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.settings-label {
+
+    margin: 0 0 6px;
+
+    color: #586eea;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+}
+
+
+.settings-header h1 {
+
+    margin: 0;
+
+    color: #17213b;
+
+    font-size: 32px;
+
+}
+
+
+.settings-header p {
+
+    color: #71809a;
+
+}
+
+
+.settings-card {
+
+    max-width: 700px;
+
+    margin-top: 28px;
+
+    padding: 28px;
+
+    border-radius: 18px;
+
+    background: white;
+
+    box-shadow: 0 10px 25px rgba(
+        30,
+        50,
+        90,
+        0.08
+    );
+
+}
+
+
+.settings-card h2 {
+
+    margin: 0 0 22px;
+
+    color: #17213b;
+
+}
+
+
+.form-group {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.form-group label {
+
+    color: #4f5d75;
+
+    font-weight: bold;
+
+}
+
+
+.form-group input {
+
+    padding: 12px 14px;
+
+    border: 1px solid #dfe4ee;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    outline: none;
+
+}
+
+
+.form-group input:focus {
+
+    border-color: #586eea;
+
+}
+
+
+.preferences-title {
+
+    margin-top: 30px !important;
+
+}
+
+
+.setting-option {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 16px 0;
+
+    border-bottom: 1px solid #edf0f5;
+
+}
+
+
+.setting-option strong {
+
+    color: #17213b;
+
+}
+
+
+.setting-option p {
+
+    margin: 5px 0 0;
+
+    color: #71809a;
+
+    font-size: 13px;
+
+}
+
+
+.setting-option input {
+
+    width: 18px;
+
+    height: 18px;
+
+}
+
+
+.save-settings-btn {
+
+    margin-top: 25px;
+
+    padding: 12px 22px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #586eea;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+
+.save-settings-btn:hover {
+
+    opacity: 0.9;
+
+}
+
+
+.success-message {
+
+    margin-top: 15px;
+
+    color: #20a66a;
+
+    font-weight: bold;
+
+}

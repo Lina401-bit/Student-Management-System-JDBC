@@ -1,0 +1,63 @@
+/* =================================
+   APP LAYOUT
+================================= */
+
+.app-layout {
+
+    display: flex;
+
+    min-height: 100vh;
+
+}
+
+
+/* =================================
+   MAIN CONTENT
+================================= */
+
+.main-content {
+
+    flex: 1;
+
+    min-width: 0;
+
+    min-height: 100vh;
+
+}
+
+
+/* =================================
+   TABLET RESPONSIVE
+================================= */
+
+@media (max-width: 900px) {
+
+    .main-content {
+
+        width: 100%;
+
+    }
+
+}
+
+
+/* =================================
+   MOBILE RESPONSIVE
+================================= */
+
+@media (max-width: 600px) {
+
+    .app-layout {
+
+        flex-direction: column;
+
+    }
+
+
+    .main-content {
+
+        width: 100%;
+
+    }
+
+}

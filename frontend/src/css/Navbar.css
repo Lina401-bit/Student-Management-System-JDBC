@@ -1,0 +1,238 @@
+/* ================================
+   SIDEBAR
+================================ */
+
+.sidebar {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 282px;
+    height: 100vh;
+
+    background: #14213d;
+
+    color: white;
+
+    padding: 32px 22px;
+
+    box-sizing: border-box;
+
+    z-index: 1000;
+
+}
+
+
+/* ================================
+   LOGO
+================================ */
+
+.logo-section {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 45px;
+
+}
+
+
+.logo-icon {
+
+    font-size: 34px;
+
+}
+
+
+.logo-text h2 {
+
+    margin: 0;
+
+    font-size: 24px;
+
+    color: white;
+
+}
+
+
+.logo-text span {
+
+    font-size: 14px;
+
+    color: #c8d1e5;
+
+}
+
+
+/* ================================
+   MENU TITLE
+================================ */
+
+.menu-title {
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    color: #8e9bb5;
+
+    margin-bottom: 18px;
+
+}
+
+
+/* ================================
+   NAVIGATION
+================================ */
+
+.nav-menu {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+}
+
+
+.nav-item {
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 14px 16px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: transparent;
+
+    color: white;
+
+    font-size: 15px;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+
+}
+
+
+.nav-item:hover {
+
+    background: rgba(255, 255, 255, 0.1);
+
+}
+
+
+.nav-item.active {
+
+    background: #2563eb;
+
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+
+}
+
+
+.nav-icon {
+
+    width: 25px;
+
+    text-align: center;
+
+    font-size: 18px;
+
+}
+
+
+.nav-label {
+
+    font-size: 15px;
+
+}
+
+
+/* ================================
+   LOGOUT
+================================ */
+
+.logout-section {
+
+    position: absolute;
+
+    left: 22px;
+
+    right: 22px;
+
+    bottom: 30px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+
+}
+
+
+.logout-button {
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 14px 16px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: transparent;
+
+    color: white;
+
+    font-size: 15px;
+
+    text-align: left;
+
+    cursor: pointer;
+
+}
+
+
+.logout-button:hover {
+
+    background: rgba(255, 255, 255, 0.1);
+
+}
+
+
+/* ================================
+   MAIN CONTENT
+================================ */
+
+.main-content {
+
+    margin-left: 282px;
+
+    min-height: 100vh;
+
+    background: #f5f7fc;
+
+}

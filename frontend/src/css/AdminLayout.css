@@ -1,0 +1,146 @@
+/* ===============================
+   ADMIN LAYOUT
+================================= */
+
+.admin-layout {
+    display: flex;
+    min-height: 100vh;
+    background: #f5f7fc;
+}
+
+/* ===============================
+   SIDEBAR
+================================= */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 260px;
+    height: 100vh;
+    overflow-y: auto;
+    background: #111827;
+    color: white;
+    z-index: 1000;
+}
+
+/* ===============================
+   PAGE CONTENT
+================================= */
+
+.admin-content {
+    flex: 1;
+    margin-left: 260px;
+    min-height: 100vh;
+    padding: 30px;
+    background: #f5f7fc;
+    overflow-x: hidden;
+}
+
+/* ===============================
+   COMMON PAGE STYLE
+================================= */
+
+.dashboard-page,
+.students-page,
+.users-page,
+.reports-page,
+.settings-page,
+.add-student-page,
+.user-dashboard {
+    width: 100%;
+    min-height: calc(100vh - 60px);
+    background: #f5f7fc;
+    animation: fadeIn .3s ease;
+}
+
+/* ===============================
+   CARD STYLE
+================================= */
+
+.dashboard-card,
+.students-container,
+.users-table-card,
+.report-section,
+.report-card,
+.settings-card,
+.add-student-card {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+
+/* ===============================
+   SCROLLBAR
+================================= */
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cfd6e6;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* ===============================
+   ANIMATION
+================================= */
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===============================
+   TABLET
+================================= */
+
+@media (max-width:992px){
+
+    .sidebar{
+        width:220px;
+    }
+
+    .admin-content{
+        margin-left:220px;
+        padding:25px;
+    }
+
+}
+
+/* ===============================
+   MOBILE
+================================= */
+
+@media (max-width:768px){
+
+    .sidebar{
+        position:relative;
+        width:100%;
+        height:auto;
+    }
+
+    .admin-layout{
+        flex-direction:column;
+    }
+
+    .admin-content{
+        margin-left:0;
+        padding:20px;
+    }
+
+}

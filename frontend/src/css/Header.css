@@ -1,0 +1,14 @@
+.dashboard-header {
+    height: 75px;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    align-items: center;
+    padding: 0 32px;
+}
+
+.header-title h2 {
+    margin: 0;
+    color: #1f2937;
+    font-size: 22px;
+}

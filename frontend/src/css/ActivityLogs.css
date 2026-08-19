@@ -1,0 +1,143 @@
+.activity-logs-page {
+    padding: 30px;
+}
+
+.activity-header {
+    margin-bottom: 25px;
+}
+
+.activity-header h1 {
+    margin: 5px 0;
+    font-size: 30px;
+}
+
+.activity-header p {
+    color: #777;
+}
+
+.activity-table-container {
+    background: white;
+    border-radius: 12px;
+    overflow-x: auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.activity-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.activity-table th,
+.activity-table td {
+    padding: 14px 16px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.activity-table th {
+    background: #f7f8fa;
+    font-weight: 600;
+}
+
+.activity-table tbody tr:hover {
+    background: #fafafa;
+}
+
+.role-badge,
+.action-badge {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.role-badge {
+    background: #eef2ff;
+}
+
+.action-badge {
+    background: #f0fdf4;
+}
+
+.no-logs {
+    text-align: center !important;
+    padding: 30px !important;
+    color: #777;
+}
+
+.activity-message {
+    padding: 20px;
+}
+
+.activity-error {
+    padding: 15px;
+    color: #b91c1c;
+    background: #fee2e2;
+    border-radius: 8px;
+}
+.activity-filters {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.activity-filters input,
+.activity-filters select {
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    background: white;
+}
+
+.activity-filters input {
+    min-width: 280px;
+}
+
+.clear-filter-btn {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.pagination-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 20px;
+    background: white;
+    border-top: 1px solid #eee;
+}
+
+.pagination-info {
+    color: #666;
+    font-size: 14px;
+}
+
+.pagination-buttons {
+    display: flex;
+    gap: 6px;
+}
+
+.pagination-buttons button {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    background: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.pagination-buttons button:hover:not(:disabled) {
+    background: #f5f5f5;
+}
+
+.pagination-buttons button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.pagination-buttons .active-page {
+    font-weight: 600;
+}

@@ -1,0 +1,263 @@
+/* ===========================
+   PROFILE PAGE
+=========================== */
+
+.profile-page {
+    flex: 1;
+    padding: 30px;
+    background: #f5f7fb;
+    min-height: 100vh;
+}
+
+.profile-header {
+    margin-bottom: 25px;
+}
+
+.profile-header h2 {
+    font-size: 28px;
+    color: #1f2937;
+    font-weight: 700;
+}
+
+.profile-header p {
+    color: #6b7280;
+    margin-top: 5px;
+}
+
+/* ===========================
+   PROFILE CARD
+=========================== */
+
+.profile-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 35px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    max-width: 850px;
+}
+
+/* ===========================
+   PROFILE PHOTO
+=========================== */
+
+.profile-avatar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.profile-avatar-circle {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background: linear-gradient(135deg,#2563eb,#3b82f6);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+/* ===========================
+   PROFILE INFO
+=========================== */
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 22px;
+}
+
+.profile-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-item label {
+    font-size: 13px;
+    color: #6b7280;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.profile-item span {
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    padding: 12px 15px;
+    border-radius: 10px;
+    color: #111827;
+    font-size: 15px;
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+.profile-actions {
+    margin-top: 35px;
+}
+
+.profile-actions button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 26px;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.profile-actions button:hover {
+    background: #1d4ed8;
+}
+/* ===========================
+   EDIT PROFILE FORM
+=========================== */
+
+.edit-form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.edit-form input {
+     width: 350px;          /* smaller width */
+     height: 40px;          /* smaller height */
+     padding: 8px 12px;
+     border: 1px solid #d1d5db;
+     border-radius: 8px;
+     font-size: 14px;
+     outline: none;
+     transition: 0.3s;
+     box-sizing: border-box;
+
+}
+
+.edit-form input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.edit-form button {
+    width: fit-content;
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.edit-form button:hover {
+    background: #1d4ed8;
+}
+
+.edit-form {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    max-width: 700px;
+}
+
+.edit-form input {
+    width: 100%;
+    height: 40px;
+    padding: 10px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.edit-form button {
+    width: 150px;
+    height: 40px;
+    grid-column: 1 / 2;
+}
+
+.edit-form p {
+    grid-column: 2 / 3;
+    align-self: center;
+    margin: 0;
+    color: green;
+    font-weight: 200;
+}
+
+.edit-form input {
+    width: 220px;
+    height: 40px;
+    padding: 8px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    box-sizing: border-box;
+    transition: .3s;
+}
+
+.edit-form input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37,99,235,.15);
+}
+
+/* Save button */
+.edit-form button {
+    width: 160px;
+    height: 40px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    grid-column: 1 / 2;
+}
+
+.edit-form button:hover {
+    background: #1d4ed8;
+}
+
+/* Success message */
+.edit-form p {
+    grid-column: 2 / 3;
+    color: green;
+    font-weight: 600;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .edit-form {
+        grid-template-columns: 1fr;
+    }
+
+    .edit-form input {
+        width: 100%;
+    }
+
+    .edit-form button,
+    .edit-form p {
+        grid-column: auto;
+    }
+}
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+    .profile-grid{
+        grid-template-columns:1fr;
+    }
+
+    .profile-card{
+        padding:25px;
+    }
+
+}

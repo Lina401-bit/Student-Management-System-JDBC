@@ -1,0 +1,415 @@
+/* =================================
+   ADD STUDENT PAGE
+================================= */
+
+.add-student-page {
+
+    min-height: 100vh;
+
+    padding: 24px 28px;
+
+    box-sizing: border-box;
+
+    background: #f5f7fc;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+/* =================================
+   CENTER CONTENT
+================================= */
+
+.add-student-header,
+.add-student-card {
+
+    width: 100%;
+
+    max-width: 650px;
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+}
+
+
+/* =================================
+   PAGE HEADER
+================================= */
+
+.add-student-header {
+
+    margin-bottom: 18px;
+
+}
+
+
+.add-student-label {
+
+    margin: 0 0 5px;
+
+    color: #586eea;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+}
+
+
+.add-student-header h1 {
+
+    margin: 0;
+
+    color: #17213b;
+
+    font-size: 30px;
+
+}
+
+
+.add-student-header p:last-child {
+
+    margin: 6px 0 0;
+
+    color: #71809a;
+
+    font-size: 14px;
+
+}
+
+
+/* =================================
+   FORM CARD
+================================= */
+
+.add-student-card {
+
+    padding: 24px 28px;
+
+    box-sizing: border-box;
+
+    border-radius: 18px;
+
+    background: white;
+
+    box-shadow: 0 10px 25px rgba(
+        30,
+        50,
+        90,
+        0.08
+    );
+
+}
+
+
+/* =================================
+   CARD HEADER
+================================= */
+
+.form-card-header {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 20px;
+
+    padding-bottom: 16px;
+
+    border-bottom: 1px solid #edf0f5;
+
+}
+
+
+.form-icons {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+}
+
+
+.form-icons span {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 36px;
+
+    height: 36px;
+
+    border-radius: 9px;
+
+    background: #edf2ff;
+
+    font-size: 18px;
+
+}
+
+
+.form-card-header h2 {
+
+    margin: 0;
+
+    color: #17213b;
+
+    font-size: 20px;
+
+}
+
+
+.form-card-header p {
+
+    margin: 4px 0 0;
+
+    color: #71809a;
+
+    font-size: 13px;
+
+}
+
+
+/* =================================
+   FORM GROUP
+================================= */
+
+.form-group {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+    margin-bottom: 14px;
+
+}
+
+
+.form-group label {
+
+    color: #4f5d75;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+}
+
+
+.form-group input {
+
+    width: 100%;
+
+    height: 40px;
+
+    padding: 0 12px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #dfe4ee;
+
+    border-radius: 7px;
+
+    outline: none;
+
+    color: #17213b;
+
+    font-size: 14px;
+
+}
+
+
+.form-group input:focus {
+
+    border-color: #586eea;
+
+    box-shadow: 0 0 0 3px rgba(
+        88,
+        110,
+        234,
+        0.1
+    );
+
+}
+
+
+.form-group input::placeholder {
+
+    color: #a0a9b8;
+
+}
+
+
+/* =================================
+   BUTTONS
+================================= */
+
+.form-actions {
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 10px;
+
+    margin-top: 20px;
+
+}
+
+
+.cancel-btn,
+.submit-btn {
+
+    padding: 9px 15px;
+
+    border-radius: 7px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+
+.cancel-btn {
+
+    border: 1px solid #dfe4ee;
+
+    background: white;
+
+    color: #71809a;
+
+}
+
+
+.submit-btn {
+
+    border: none;
+
+    background: #586eea;
+
+    color: white;
+
+}
+
+
+.cancel-btn:hover {
+
+    background: #f5f7fc;
+
+}
+
+
+.submit-btn:hover {
+
+    opacity: 0.9;
+
+}
+
+
+.submit-btn:disabled {
+
+    opacity: 0.6;
+
+    cursor: not-allowed;
+
+}
+
+
+/* =================================
+   SUCCESS MESSAGE
+================================= */
+
+.success-message {
+
+    margin-bottom: 15px;
+
+    padding: 10px 12px;
+
+    border-radius: 7px;
+
+    background: #e8f8ef;
+
+    color: #218653;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+}
+
+
+/* =================================
+   ERROR MESSAGE
+================================= */
+
+.error-message {
+
+    margin-bottom: 15px;
+
+    padding: 10px 12px;
+
+    border-radius: 7px;
+
+    background: #fff0f0;
+
+    color: #d34c4c;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+}
+
+
+/* =================================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 600px) {
+
+    .add-student-page {
+
+        padding: 18px;
+
+    }
+
+
+    .add-student-card {
+
+        padding: 20px;
+
+    }
+
+
+    .form-actions {
+
+        justify-content: stretch;
+
+    }
+
+
+    .cancel-btn,
+    .submit-btn {
+
+        flex: 1;
+
+    }
+
+}

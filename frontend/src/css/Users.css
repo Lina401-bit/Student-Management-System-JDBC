@@ -1,0 +1,247 @@
+.users-page {
+
+    width: 100%;
+
+    padding: 24px 32px;
+
+    box-sizing: border-box;
+
+}
+
+
+.users-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 24px;
+
+}
+
+
+.users-label {
+
+    margin: 0 0 6px;
+
+    color: #586eea;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+}
+
+
+.users-header h1 {
+
+    margin: 0;
+
+    color: #17213b;
+
+    font-size: 30px;
+
+}
+
+
+.users-header p {
+
+    margin-top: 8px;
+
+    color: #7b879d;
+
+}
+
+
+.users-count {
+
+    padding: 12px 20px;
+
+    border-radius: 12px;
+
+    background: #edf2ff;
+
+    color: #586eea;
+
+    font-weight: bold;
+
+}
+
+
+.users-table-card {
+
+    overflow-x: auto;
+
+    background: white;
+
+    border-radius: 16px;
+
+    box-shadow: 0 8px 25px rgba(30, 50, 90, 0.08);
+
+}
+
+
+.users-table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+}
+
+
+.users-table th {
+
+    padding: 16px 20px;
+
+    text-align: left;
+
+    background: #f7f8fc;
+
+    color: #65718b;
+
+    font-size: 13px;
+
+}
+
+
+.users-table td {
+
+    padding: 16px 20px;
+
+    border-bottom: 1px solid #edf0f5;
+
+    color: #34405a;
+
+}
+
+
+.username-cell {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    font-weight: bold;
+
+}
+
+
+.user-avatar {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 38px;
+
+    height: 38px;
+
+    border-radius: 50%;
+
+    background: #586eea;
+
+    color: white;
+
+    font-weight: bold;
+
+}
+
+
+.role-badge {
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    background: #edf2ff;
+
+    color: #586eea;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+}
+
+
+.status-badge {
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    background: #e3f8ee;
+
+    color: #20a66a;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+}
+
+
+.edit-btn,
+
+.delete-btn {
+
+    border: none;
+
+    padding: 7px 12px;
+
+    margin-right: 6px;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+}
+
+
+.edit-btn {
+
+    background: #edf2ff;
+
+    color: #586eea;
+
+}
+
+
+.delete-btn {
+
+    background: #ffe8e8;
+
+    color: #e05252;
+
+}
+
+
+.no-users,
+
+.message,
+
+.error-message {
+
+    padding: 30px;
+
+    text-align: center;
+
+}
+
+
+.error-message {
+
+    color: #e05252;
+
+}
